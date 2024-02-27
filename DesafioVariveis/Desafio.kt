@@ -6,7 +6,7 @@ fun main(){
     var nota2: Double = 5.0
     var nota3: Double = 9.0
 
-    var mediaFinal: Double = (nota01 + nota02 + nota03) / 3
+    var mediaFinal: Double = (nota1 + nota2 + nota3) / 3
 
     println("Nota final: $mediaFinal")
 }
