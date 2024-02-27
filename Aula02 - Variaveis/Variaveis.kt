@@ -19,18 +19,57 @@
 
 // }
 
-fun main() {
-    val numeroInteiro: Int = 10
-    val numeroLong: Long = 100000000
-    val numeroDecimal: Double = 211.14
-    val caractere: Char = 'V'
-    val texto: String = "Kotlin também serve para back end"
-    val verdadeiro: Boolean = true
+// fun main() {
+//     val numeroInteiro: Int = 10
+//     val numeroLong: Long = 100000000
+//     val numeroDecimal: Double = 211.14
+//     val caractere: Char = 'V'
+//     val texto: String = "Kotlin também serve para back end"
+//     val verdadeiro: Boolean = true
 
-    println("Inteiro: $numeroInteiro")
-    println("Long: $numeroLong")
-    println("Decimal: $numeroDecimal")
-    println("Caractere: $caractere")
-    println("Texto: $texto")
-    println("Boolean: $verdadeiro")
+//     println("Inteiro: $numeroInteiro")
+//     println("Long: $numeroLong")
+//     println("Decimal: $numeroDecimal")
+//     println("Caractere: $caractere")
+//     println("Texto: $texto")
+//     println("Boolean: $verdadeiro")
+// }
+
+// Mutabilidade e Imutabilidade no contexto de var e val
+
+// fun main(){
+
+//     var mutavel: Int = 10 //mutavel
+//     val imutavel: Int = 5 //imutavel
+
+//     mutavel = 15 //ok
+//     imutavel = 20 // erro! Não pode atribuir um valor a uma variável declarada como imutável
+//     println("Mutável: $mutavel")
+//     println("Imutável: $imutavel")
+
+// }
+
+// Convenções de Nomenclatura
+// Exemplos:
+
+// fun main(){
+
+//     val nomeCompleto: String = "Guilherme Tantulli"
+//     val idadeDoUsuario: Int = 24
+//     val valorTotal: Double = 50.0
+
+//     println("Nome completo: $nomeCompleto")
+//     println("Idade: $idadeDoUsuario")
+//     println("Valor Total: $valorTotal")
+// }
+
+fun main(){
+
+    var nota01: Double = 10.0
+    var nota02: Double = 5.0
+    var nota03: Double = 9.0
+
+    var notaFinal: Double = (nota01 + nota02 + nota03) / 3
+
+    println("Nota final: $notaFinal")
 }
