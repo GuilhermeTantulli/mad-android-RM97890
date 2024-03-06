@@ -31,3 +31,5 @@ fun coletarDados() {
 fun main(){
     coletarDados()
 }
+
+// para rodar: java -jar IMC.jar - após rodar o arquivo .kt
