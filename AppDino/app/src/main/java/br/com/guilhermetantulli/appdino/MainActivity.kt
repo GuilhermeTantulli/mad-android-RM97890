@@ -1,20 +1,28 @@
 package br.com.guilhermetantulli.appdino
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.view.View
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var imagem : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        imagem = findViewById(R.id.imageView)
+    }
+
+    fun cliqueBotao(view: View) {
+        when (view.id) {
+
+            R.id.btn1 -> imagem.setImageResource(R.drawable.dino1)
+            R.id.btn2 -> imagem.setImageResource(R.drawable.dino2)
+            R.id.btn3 -> imagem.setImageResource(R.drawable.dino3)
+
         }
     }
+
 }
